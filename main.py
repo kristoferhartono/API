@@ -2,7 +2,8 @@ import json
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse
 from fastapi.encoders import jsonable_encoder
-
+ 
+ 
 with open("menu.json", "r") as read_file:
     data = json.load(read_file)
 app = FastAPI()
